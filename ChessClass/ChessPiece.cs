@@ -92,7 +92,7 @@ namespace ChessClass// Note: actual namespace depends on the project name.
         {
             var possibleMoves = new StringBuilder("");
             foreach (var move in _possibleMoves) { possibleMoves.Append($"({move.Item1}, {move.Item2}) "); }
-            return $"{_name}\nPiece Value: {_value}\nPossible moves:{possibleMoves}\nCurrent Coordinates:{_xCoordinate}, {_yCoordinate}\nIn Check:{_isInCheck}";
+            return $"{_colour} {_name}\nPiece Value: {_value}\nPossible moves:{possibleMoves}\nCurrent Coordinates:{_xCoordinate}, {_yCoordinate}\nIn Check:{_isInCheck}";
         }
 
         public virtual void Promote(ChessPiece chessPieceToBePromotedTo)

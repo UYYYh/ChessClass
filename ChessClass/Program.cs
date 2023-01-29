@@ -14,8 +14,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
             var pawnPossibleMoves = new List<Tuple<int, int>>() { new Tuple<int, int>(0, 1), new Tuple<int, int>(0, 2), new Tuple<int, int>(1, 1), new Tuple<int, int>(-1, 1) };
             var WhiteKnight1 = new ChessPiece("Knight", knightPossibleMoves, 3, false, 2, 1, false, "White");
             var WhiteKnight2 = new ChessPiece("Knight", knightPossibleMoves, 3, false, 2, 7, false, "White");
-            var WhiteRook1 = new ChessPiece("Rook", rookPossibleMoves, 3, false, 1, 1, false, "White");
-            var WhiteRook2 = new ChessPiece("Rook", rookPossibleMoves, 3, false, 1, 8, false, "White");
+            var WhiteRook1 = new ChessPiece("Rook", rookPossibleMoves, 3, true, 1, 1, false, "White");
+            var WhiteRook2 = new ChessPiece("Rook", rookPossibleMoves, 3, true, 1, 8, false, "White");
             Console.WriteLine(WhiteKnight1.Info());
 
             var checkIsPinned = WhiteKnight1.IsPinned;
